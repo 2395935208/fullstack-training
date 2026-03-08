@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录系统</title> 
+</head>
+<body>
+    <header>
+        <h1>欢迎来到登录界面</h1>
+    </header>
+    <main>
+        <section>
+            <h2>账号登录</h2>
+            <form action="/login" method="post">
+                <label for="reg-user">用户账号：</label>
+                <input type="text" id="reg-user" name="username" required placeholder="请输入用户名">
+                <br>
+                <label for="reg-password">用户密码：</label>
+                <input type="password" id="reg-password" name="password" required placeholder="请输入密码">
+                <br>
+                <label for="reg-email">电子邮件：</label>
+                <input type="email" id="reg-email" name="email" required placeholder="请输入电子邮件">
+                <br>
+                <button type="submit">登录</button>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

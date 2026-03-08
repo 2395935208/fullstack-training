@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册 - 语义化规范版</title>
+</head>
+<body>
+
+    <header>
+        <h1>用户系统中心</h1>
+        <nav>
+            <ul>
+                <li><a href="login.html">去登录</a></li>
+                <li><strong>新用户注册</strong></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <article>
+            <header>
+                <h2>创建新账号</h2>
+                <p>请填写以下信息完成注册</p>
+            </header>
+
+            <form action="/api/register" method="POST">
+                
+                <section>
+                    <h3>基础信息</h3>
+                    
+                    <fieldset>
+                        <legend>账号设置</legend>
+
+                        <p>
+                            <label for="reg-user">用户名：</label>
+                            <input type="text" id="reg-user" name="username" required placeholder="3-12位字符">
+                        </p>
+
+                        <p>
+                            <label for="reg-email">电子邮箱：</label>
+                            <input type="email" id="reg-email" name="email" required placeholder="example@mail.com">
+                        </p>
+
+                        <p>
+                            <label for="reg-password">设置密码：</label>
+                            <input type="password" id="reg-password" name="password" required minlength="6">
+                        </p>
+                    </fieldset>
+                </section>
+
+                <footer>
+                    <button type="submit">同意协议并注册</button>
+                    <button type="reset">重置表单</button>
+                </footer>
+
+            </form>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 全语义化实战项目</p>
+        <address>
+            联系支持：<a href="mailto:support@example.com">support@example.com</a>
+        </address>
+    </footer>
+
+</body>
+</html>
