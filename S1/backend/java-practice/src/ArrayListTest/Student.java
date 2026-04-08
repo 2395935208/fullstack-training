@@ -37,4 +37,8 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
+    @Override
+    public String toString() {
+        return "学号：" + id + ", 姓名：" + name + ", 年龄：" + age;
+    }
 }

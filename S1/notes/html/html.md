@@ -40,6 +40,12 @@ html，head，body
 - select：下拉框
 - option：下拉框的选项
 - label：给表单中的输入框进行描述
+- placeholder：占位符，给提示的
+- required：必填，不填会给提示
+- section：辅助标记，给内容进行分组
+- id：元素在html的唯一标识
+- name：元素在表单中的标识，可以重复
 ### 5.辅助标记    
+
 
 

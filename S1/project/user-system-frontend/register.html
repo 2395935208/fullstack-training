@@ -19,11 +19,45 @@
                 <label for="reg-password">用户密码：</label>
                 <input type="password" id="reg-password" name="password" required placeholder="请输入密码">
                 <br>
+                <!--添加确认密码功能-->
+                <label for="reg-confirm"> 确认密码：</label>
+                <input type="password" id="reg-confirm" name="confirm" required placeholder="请在此输入密码">
+                <br>
                 <label for="reg-email">电子邮件：</label>
                 <input type="email" id="reg-email" name="email" required placeholder="请输入电子邮件">
                 <br>
-                <button type="submit">登录</button>
-                
+                <!--添加性别选项-->
+                <fieldset>
+                    <legend>性别：</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        男
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        女
+                        </input>
+                    </label>
+                </fieldset>
+<!--                添加爱好功能-->
+                <fieldset>
+                    <legend>爱好：</legend>
+                    <label>
+                        <input type="checkbox" name="hobby" value="reading">
+                        阅读
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobby" value="swimming"></input>
+                        游泳
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobby" value="coding">
+                        编码
+                    </label>
+                </fieldset>
+                <footer>
+                    <button type="submit">登录</button>
+                </footer>
             </form>
         </section>
     </main>
